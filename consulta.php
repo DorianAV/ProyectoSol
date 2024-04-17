@@ -11,7 +11,7 @@
     header('HTTP/1.1 200 OK');
     exit();
 }
-      $con=new mysqli("localhost","root","","proyecto");
+      $con=new mysqli("localhost","root","2004","proyectosol");
        $sensql="insert into consultas (nombre,edad,peso,proxima_consulta,detalles_alimentacion) values('$n','$ed','$pe','$prox','$deta')";
        $re=$con->query($sensql);
        $con->close();

@@ -9,7 +9,7 @@
     header('HTTP/1.1 200 OK');
     exit();
 }
-      $con=new mysqli("localhost","root","","proyecto");
+      $con=new mysqli("localhost","root","2004","proyectosol");
        $sensql="insert into citas (Nombre,Fecha,Hora) values('$n','$fe','$ho')";
        $re=$con->query($sensql);
        $con->close();

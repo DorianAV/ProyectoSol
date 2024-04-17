@@ -10,7 +10,7 @@
     header('HTTP/1.1 200 OK');
     exit();
 }
-      $con=new mysqli("localhost","root","","proyecto");
+      $con=new mysqli("localhost","root","2004","proyectosol");
        $sensql="insert into usuarios (nombre,correo,contrasena,Tipo) values('$n','$fe','$ho','$tp')";
        $re=$con->query($sensql);
        $con->close();

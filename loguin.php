@@ -7,7 +7,7 @@ if(isset($_GET['correo']) && isset($_GET['contrasena'])) {
     
     $sql = "SELECT * FROM Usuarios WHERE Correo  ='$correo' AND Contrasena='$contrasena'";
     
-    $con = mysqli_connect("localhost", "root", "", "proyecto");
+    $con = mysqli_connect("localhost", "root", "2004", "proyectosol");
     $alu = mysqli_query($con, $sql);
 
     $alumno = mysqli_fetch_assoc($alu);

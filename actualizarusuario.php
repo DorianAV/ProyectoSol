@@ -8,7 +8,7 @@ $idu = $json->id;
 $nombre = $json->nombre;
 
 $sql = "UPDATE usuarios SET nombre='$nombre' WHERE id='$idu'";
-$con = mysqli_connect('localhost', 'root', '', 'proyecto');
+$con = mysqli_connect('localhost', 'root', '2004', 'proyectosol');
 $res = mysqli_query($con,$sql);
 mysqli_close($con);
 
